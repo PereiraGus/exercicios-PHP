@@ -12,16 +12,15 @@
         margin: 0 auto;
       }
     </style>
+    <?php
+      require 'validarSessao.php';
+    ?>
   </head>
 
   <body>
-
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
-      </a>
-    </nav>
+    <?php
+      require("navbar.php");
+    ?>
 
     <div class="container">    
       <div class="row">
@@ -35,15 +34,15 @@
               <div class="row">
                 <div class="col">
                   
-                  <form>
+                  <form method="POST" action="registrarChamado.php">
                     <div class="form-group">
                       <label>Título</label>
-                      <input type="text" class="form-control" placeholder="Título">
+                      <input type="text" class="form-control" placeholder="Título" name="titulo">
                     </div>
                     
                     <div class="form-group">
                       <label>Categoria</label>
-                      <select class="form-control">
+                      <select class="form-control" name="categoria">
                         <option>Criação Usuário</option>
                         <option>Impressora</option>
                         <option>Hardware</option>
@@ -54,12 +53,12 @@
                     
                     <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="3"></textarea>
+                      <textarea class="form-control" rows="3" name="descricao"></textarea>
                     </div>
 
                     <div class="row mt-5">
                       <div class="col-6">
-                        <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                        <a class="btn btn-lg btn-warning btn-block" href="home.php">Voltar</a>
                       </div>
 
                       <div class="col-6">

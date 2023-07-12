@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
+
         function impostoRenda($pSalario){
             if($pSalario < 1903.99){
                 return 0;

@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
         echo 'Tag padrão';
     ?>
     <br>

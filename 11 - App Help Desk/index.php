@@ -13,8 +13,15 @@
       }
     </style>
     <?php
-      if(isset($_GET['erro']) && $_GET['erro'] == 'sessao'){
-        echo '<script>alert("Sessão expirada ou inválida. Favor logar novamente")</script>';
+      if(isset($_GET['erro'])){
+        switch($_GET['erro']){
+          case 'sessao':
+            echo '<script>alert("Sessão expirada ou inválida. Favor logar novamente")</script>';
+            break;
+          case 'login':
+            echo '<script>alert("Email ou senha inválidos.")</script>';
+            break;
+        }
       }
     ?>
   </head>

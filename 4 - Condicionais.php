@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
+        
         $idade = 18;
         $peso = 54;
 

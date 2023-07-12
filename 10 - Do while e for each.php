@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
+
         $x = 1;
         do{
             if($x == 8){

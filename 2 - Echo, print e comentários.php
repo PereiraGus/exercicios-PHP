@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
         echo 'Comando echo<br>'; //Construtor da linguagem
         print 'Comando print<hr>'; //Função, por isso RETORNA VALOR
         print('Print como função<hr>');

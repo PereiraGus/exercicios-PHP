@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
         $valor = 10;
         echo 'O tipo de variável é '.gettype($valor);
 

@@ -8,6 +8,8 @@
 <body>
     <h1>Todo sobre o Gus</h1>
     <?php
+        include("navbar.php");
+
         $nome = ucfirst('gustavo');
         echo '<p>Seu nome por extenso é '.$nome.', podendo ser escrito como 
         '.strtoupper($nome).' ou '.strtolower($nome).', tendo '.strlen($nome).' letras.';

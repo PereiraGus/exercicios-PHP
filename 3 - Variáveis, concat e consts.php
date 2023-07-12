@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
+        
         define("URL_BANCO","https://...");
         define("PORTA_BANCO",3306);
 

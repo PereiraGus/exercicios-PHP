@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
+
         $frutas = ["Banana", "Uva", "Pera","Acerola",'Morango','Pitanga','Fruta do conde','Laranja','Limão','Mamão','Manga']
     ?>
     <h1>Seja bem-vindo ao mercado das frutas, vendemos <?php echo count($frutas) ?> tipos de frutas deliciosos aqui</h1>

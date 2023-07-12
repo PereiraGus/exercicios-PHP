@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+        include("navbar.php");
+
         function boasVindas(){
             echo '<h1>Seja bem-vinde à calculadora de PHPtágoras</h1>';
 
